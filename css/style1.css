@@ -1,0 +1,93 @@
+html {
+	background: url("../images/white_hall.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1, h2, h3, h4 {
+    color: #809BCE;
+	/*color: #2B59C3;
+	*/
+}
+
+body {
+	font-size: 100%;
+	font-family: "Computer Modern Sans", sans-serif;
+}
+
+div.wrap {
+	margin: auto;
+	text-align: center;
+	background-color: rgba(255, 254, 255, 0.5);
+	padding: 18px;
+	/*opacity: 0.5;
+	*/
+	width: 50%;
+}
+
+p {
+	text-align: left;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
+.heading {
+	text-align:left;
+	padding-left: 4em;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+video{
+	padding: none;
+}
+
+a {
+	color: #2B59C3;
+	text-decoration: none;
+	
+}
+
+.contact {
+    color: lightblue;
+	text-align: center;
+}
+
+button.accordion {
+    background-color: rgba(255, 254, 255, 0);
+	
+    color: #809BCE;
+	cursor: pointer;
+    /*padding: 18px;
+    */
+	width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	font-size: 100%;
+	font-family: "Computer Modern Sans", sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active{
+	background-color: rgba(255, 254, 255, 0);
+}
+
+button.accordion:hover {
+    background-color: rgba(255, 254, 255, 0.5);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0px 18px;
+    background-color: rgba(255, 254, 255, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+

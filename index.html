@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>James O'Neal</title>
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+</head>
+<body>
+
+<div class="wrap">
+	<h1>Welcome</h1>
+	<img class="img-circle" src="images/graduate.jpg" alt="profile picture" style="width:128px;height:128px;" id="profile"><br />
+	<a class="link" href="https://www.linkedin.com/in/james-o-neal-aa521a133/">LinkedIn Profile</a>
+	<a class="link" href="http://cosine.oregonstate.edu">Former Employer</a>	
+	
+	<button class="accordion"><h3>Resume</h3></button>
+	<div class="panel">
+		<a href="pdf/resume.pdf">Fullscreen</a>
+		<embed src="pdf/resume.pdf" width="800px" height="1080px" />
+	</div>
+	
+	<button class="accordion"><h3>About James</h3></button>
+	<div class="panel">
+		<p>
+			I am a recent graduate of Oregon State University seeking employment as a software engineer. 
+			While I was a student I worked for the University at an IT help desk. 
+			There I strengthened my skills in problem solving, troubleshooting, and customer service. 
+			These skills, in addition to my coursework, have given me the confidence to complete any challenge I am given.
+			<br /><br />
+			I am interested in the fields of web development, graphics, and upper level IT. 
+			As a senior capstone project, I did full stack development for the Energy Efficiency Center. 
+			This year long process has given me insight into the challenges and innovation of client based web development. 
+			I have also taken graphics and concurrent programming courses to fulfil a game and simulation option for my degree. 
+			This coursework has given me a love for all things graphics related. 
+			While I have the most experience in IT I would like to utilize a broader skillset by pursuing a career in the software development industry.
+		</p>
+	</div>
+	
+	<button class="accordion"><h3>Personality</h3></button>
+	<div class="panel">
+	  <a href="pdf/GallupReport.pdf">Fullscreen</a>
+	  <embed src="pdf/GallupReport.pdf" width="800px" height="1080px" />
+	</div>
+	
+	<button class="accordion"><h3>Projects</h3></button>
+	<div class="panel">
+		<a href="http://eec.oregonstate.edu/" target="_blank"><h4 class="heading">Energy Effeciency Center</h4></a>
+		<p> For a senior capstone project I developed an internal website for the Engineering Efficiency Center.
+			Over the course of nine months my two teammates and I completed this full stack development project.
+			During this time I learned a great deal about small business application development.
+			This includes experience in web development, technical documentation, and teamwork.
+			The back-end is built using MySQL and PHP while the front-end uses HTML, CSS, and JavaScript.
+			The results of this effort can be viewed below at the demo site. 
+		</p>
+		<a class="link" href="EEC/views/landing.php" target="_blank"><img src="images/EEC_demo.jpg" alt="EEC Demo" style="width:759px;height:350px;"></a>
+		<br /><br />
+		
+		<a href="pdf/cs457-557.pdf" target="_blank"><h4 class="heading">Computer Graphics Shaders</h4></a>
+		<p> As a final project for graphics shaders I attemted to re-create convincing water.
+			The ocean scene below was created in OpenGL and uses animation, normal maps, and dynamic lighting.
+			This short demo was recorded using Fraps and is being manipulated real time.
+		</p>
+		<video width="480" height="320" controls="controls">
+		<source src="videos/graphics_demo.mp4" type="video/mp4">
+		</video>
+		
+		<a href="pdf/cs457-557.pdf" target="_blank"><h4 class="heading">Github</h4></a>
+		<p> The site you are currently on was designed and created by me, James O'Neal. 
+			It was developed with HTML, CSS, and Javascript in order to further demonstrate abilities in website design.
+		</p>
+			
+		
+	</div>
+
+	<button class="accordion"><h3>Contact</h3></button>
+	<div class="panel">
+		<p class="contact">
+			<a class="link" id="external" href="https://www.linkedin.com/in/james-o-neal-aa521a133/">LinkedIn</a><br />
+			jd@jamesdoneal.com <br />
+			503-360-6592
+		</p>
+	</div>
+	
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight){
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	  }
+	}
+	</script>
+</div>
+
+<!--
+<ul style="list-style-type:circle">
+  <li>About Me
+	<ul>
+	<li>Mission Statement</li>
+	<li>Resume</li>
+	<li>Strengths Finder</li>
+	<li>transcript?</li>
+	</ul>
+  </li>
+  <li>Projects and Demos
+	<ul>
+	<li>Capstone</li>
+	<li>Graphics</li>
+	<li>webdev?</li>
+	<li>Info Vis</li>
+	<li>WebGL game/2d wave sim</li>
+	</ul>
+  </li>
+  <li>Something Else</li>
+</ul>
+--> 
+
+</body>
+</html>
